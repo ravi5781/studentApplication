@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pentagon Space - Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #1e3a8a; /* Navy Blue */
+        }
+        h3 {
+            color: #2563eb; /* Lighter Blue */
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 300px;
+            padding: 6px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            margin-top: 15px;
+            width: 310px;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-link {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pentagon Space</h1>
+        <h3>Application form</h3>
+        <form action="signup" method="post">
+            <label>Enter your Name:
+                <input type="text" name="name" required>
+            </label>
+            <label>Enter the Phone number:
+                <input type="text" name="phone" required>
+            </label>
+            <label>Enter the Mail ID:
+                <input type="email" name="mail" required>
+            </label>
+            <label>Enter the Branch:
+                <input type="text" name="branch" required>
+            </label>
+            <label>Enter the Location:
+                <input type="text" name="loc" required>
+            </label>
+            <label>Enter the password:
+                <input type="password" name="password" required>
+            </label>
+            <label>Confirm the password:
+                <input type="password" name="confirm" required>
+            </label>
+            <button type="submit" class="button">create account</button>
+        </form>
+        <span class="login-link">already have a account? <a href="login.jsp">login</a></span>
+    </div>
+</body>
+</html>
